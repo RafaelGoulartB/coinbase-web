@@ -49,10 +49,10 @@
 * [Contributing](#tada-contributing)
 * [License](#closed_book-license)
 
-<h2 align="left"> 📥 Layout available at: </h2>
+<h2 align="left"> 📥 Layout available at figma community: </h2>
 <p align="center">
-    <a title="Acess Figma Web" href=https://www.figma.com/file/wzcncKCBHssq9X2gq6aD28/InteriorDesign">
-        <img alt="Direct Download" src="https://img.shields.io/badge/Acess Figma Web-black?style=flat-square&logo=figma&logoColor=red" width="200px" />
+    <a title="Acess Figma Community" href=https://www.figma.com/community/file/804922692506903468">
+        <img alt="Figma Community" src="https://img.shields.io/badge/Figma Community-black?style=flat-square&logo=figma&logoColor=red" width="200px" />
     </a>
 </p>
 

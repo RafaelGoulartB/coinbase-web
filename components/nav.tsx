@@ -52,7 +52,7 @@ const Nav: React.FC = props => {
   return (
     <Flex
       as="nav"
-      position="fixed"
+      position="relative"
       width="100vw"
       alignItems="center"
       justify="space-between"

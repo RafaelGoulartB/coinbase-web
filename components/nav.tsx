@@ -10,8 +10,8 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  Text,
-  PseudoBox
+  PseudoBox,
+  Icon
 } from '@chakra-ui/core'
 import Link from 'next/link'
 
@@ -105,14 +105,8 @@ const Nav: React.FC = props => {
         alignItems="center"
       >
         <Menu>
-          <MenuButton
-            as={Button}
-            rightIcon="chevron-down"
-            color="black"
-            bg="none"
-            mr="10"
-          >
-            Sell Bitcoin/ Giftcard
+          <MenuButton as={Button} color="black" bg="none" mr="10">
+            Sell Bitcoin/ Giftcard <Icon name="chevron-down" />
           </MenuButton>
           <MenuList color="black">
             <MenuItem>Sell Bitcoins</MenuItem>

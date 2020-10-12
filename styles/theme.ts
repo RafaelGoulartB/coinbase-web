@@ -29,9 +29,14 @@ const customTheme: DefaultTheme = {
   },
   colors: {
     ...theme.colors,
-    orange: {
-      ...theme.colors.orange,
-      500: "#FBA442"
+    black: '#333',
+    pink: {
+      ...theme.colors.pink,
+      500: "#FD749B"
+    },
+    blue: {
+      ...theme.colors.blue,
+      500: "#281AC8"
     }
   },
   breakpoints

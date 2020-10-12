@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <>
       <Nav />
       <Heading
-        background="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);"
+        background="linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%);"
         color="white"
         pt="40"
       >

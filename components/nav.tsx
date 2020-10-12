@@ -107,7 +107,6 @@ const Nav: React.FC = props => {
         <Menu>
           <MenuButton
             as={Button}
-            variantColor="white"
             rightIcon="chevron-down"
             color="black"
             bg="none"

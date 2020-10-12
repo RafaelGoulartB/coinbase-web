@@ -1,29 +1,21 @@
 import React from 'react'
-import { Heading, Flex, Button, Text, Image, PseudoBox } from '@chakra-ui/core'
-import HeroContainer from '../components/hero-container'
+import { Button, Text, Image } from '@chakra-ui/core'
+import HeroContainer from '../components/hero/hero-container'
+import HeroTexts from '../components/hero/hero-texts'
+import HeroTitle from '../components/hero/hero-title'
 
 const Home: React.FC = () => {
   return (
     <>
       <HeroContainer>
-        <Flex
-          flexDir="column"
-          pr={['8', '8', '40', '0', '0']}
-          pl={['8', '8', '40', '40', '40']}
-          color="white"
-        >
-          <Heading
-            as="h2"
-            fontWeight="normal"
-            display="inline"
-            mt={['8', '8', '8', '0', '0']}
-          >
+        <HeroTexts>
+          <HeroTitle>
             We provide easy solution to exchange your{' '}
             <Text fontWeight="bold" display="inline">
               Bitcoin/ GiftCard for money
             </Text>
-          </Heading>
-          <Text py="6">
+          </HeroTitle>
+          <Text py="6" maxW="550px">
             CoinBase is a platform for trading your bitcoin and giftcard at the
             best rate, why not give us a trial.
           </Text>
@@ -38,7 +30,7 @@ const Home: React.FC = () => {
           >
             Get Started
           </Button>
-        </Flex>
+        </HeroTexts>
 
         <Image
           src="/home-bg.png"

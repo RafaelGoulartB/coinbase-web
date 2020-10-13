@@ -14,36 +14,42 @@ import {
   Icon
 } from '@chakra-ui/core'
 import Link from 'next/link'
+import { useRouter } from 'next/dist/client/router'
 
 interface MenuItem {
   link?: string
   onClick?: any
 }
 
-const MenuItems: React.FC<MenuItem> = ({ children, link, onClick }) => (
-  <Link href={link}>
-    <PseudoBox
-      as="a"
-      mt={[6, 6, 0, 0]}
-      mr={'36px'}
-      display="block"
-      fontWeight="bold"
-      fontSize={['md', 'md', 'md', 'md']}
-      color="black"
-      onClick={onClick || undefined}
-      transition="border .2s"
-      _hover={{
-        borderBottomColor: 'pink.500',
-        borderBottomWidth: ['0', '0', '4px', '4px', '4px'],
-        borderBottomLeftRadius: '2px',
-        borderBottomRightRadius: '2px',
-        cursor: 'pointer'
-      }}
-    >
-      {children}
-    </PseudoBox>
-  </Link>
-)
+const MenuItems: React.FC<MenuItem> = ({ children, link, onClick }) => {
+  const router = useRouter()
+
+  return (
+    <Link href={link}>
+      <PseudoBox
+        as="a"
+        mt={[6, 6, 0, 0]}
+        mr={'36px'}
+        display="block"
+        fontWeight="bold"
+        fontSize={['md', 'md', 'md', 'md']}
+        color="black"
+        onClick={onClick || undefined}
+        transition="border .2s"
+        borderBottomColor={router.pathname === link ? 'pink.500' : 'none'}
+        borderBottomWidth={router.pathname === link ? '4px' : 'none'}
+        borderBottomLeftRadius={router.pathname === link ? '2px' : 'none'}
+        borderBottomRightRadius={router.pathname === link ? '2px' : 'none'}
+        _hover={{
+          cursor: 'pointer',
+          textDecor: router.pathname !== link ? 'underline' : 'none'
+        }}
+      >
+        {children}
+      </PseudoBox>
+    </Link>
+  )
+}
 
 const Nav: React.FC = props => {
   const [show, setShow] = React.useState(false)
@@ -94,10 +100,18 @@ const Nav: React.FC = props => {
         marginTop={['20px', '20px', '0', '0', '0']}
       >
         <Divider />
-        <MenuItems link="/">Home</MenuItems>
-        <MenuItems link="/about">About Us</MenuItems>
-        <MenuItems link="/blog">Blog</MenuItems>
-        <MenuItems link="/contact-us">Contact Us</MenuItems>
+        <MenuItems onClick={handleToggle} link="/">
+          Home
+        </MenuItems>
+        <MenuItems onClick={handleToggle} link="/about">
+          About Us
+        </MenuItems>
+        <MenuItems onClick={handleToggle} link="/blog">
+          Blog
+        </MenuItems>
+        <MenuItems onClick={handleToggle} link="/contact-us">
+          Contact Us
+        </MenuItems>
       </Box>
 
       <Box

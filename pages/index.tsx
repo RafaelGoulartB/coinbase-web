@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         <Image
           src="/home-bg.png"
           display={['none', 'none', 'none', 'block', 'block']}
-          pb="40"
+          pb={['0', '0', '0', '40', '20']}
         />
       </HeroContainer>
 

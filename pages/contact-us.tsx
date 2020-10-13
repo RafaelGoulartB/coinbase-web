@@ -20,7 +20,7 @@ const ContactUs: React.FC = () => {
         <Image
           src="/contact-bg.png"
           display={['none', 'none', 'none', 'block', 'block']}
-          pb="40"
+          pb={['0', '0', '0', '40', '20']}
           mr="8"
         />
       </HeroContainer>

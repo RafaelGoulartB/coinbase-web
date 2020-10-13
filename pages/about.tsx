@@ -21,7 +21,7 @@ const About: React.FC = () => {
         <Image
           src="/about-bg.png"
           display={['none', 'none', 'none', 'block', 'block']}
-          pb="40"
+          pb={['0', '0', '0', '40', '20']}
           mr="8"
           pt="10"
         />

@@ -13,7 +13,6 @@ const Welcome: React.FC = () => {
       pb="40"
       pr={['8', '8', '32', '16', '0']}
       pl={['8', '8', '32', '16', '0']}
-      overflow="hidden"
       mx="auto"
     >
       <Image

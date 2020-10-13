@@ -69,7 +69,6 @@ const Nav: React.FC = props => {
       backgroundColor="white"
       color="white"
       zIndex={999}
-      overflowX="hidden"
       {...props}
     >
       <Flex align="center" mr={5}>

@@ -31,6 +31,10 @@ const customTheme: DefaultTheme = {
   colors: {
     ...theme.colors,
     black: '#333',
+    gray: {
+      ...theme.colors.gray,
+      200: '#A2A2A2'
+    },
     pink: {
       ...theme.colors.pink,
       500: "#FD749B"

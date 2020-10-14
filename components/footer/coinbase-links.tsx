@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const CoinbaseLinks: React.FC = () => {
   return (
-    <Flex flexDir="column">
+    <Flex flexDir="column" my={['12', '12', '12', '0', '0']}>
       <Text fontWeight="bold" color="white">
         CoinBase Links
       </Text>

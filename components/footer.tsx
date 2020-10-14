@@ -13,6 +13,7 @@ import ContactSection from './footer/contact-section'
 const Footer: React.FC = () => {
   return (
     <Flex
+      flexDir={['column', 'column', 'column', 'row', 'row']}
       bg="#151515"
       mt="40"
       paddingX={['16', '16', '16', '16', '15%']}

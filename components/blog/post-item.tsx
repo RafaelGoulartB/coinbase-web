@@ -1,5 +1,13 @@
 import React from 'react'
-import { Flex, Heading, Image, Button, Text, Box } from '@chakra-ui/core'
+import {
+  Flex,
+  Heading,
+  Image,
+  Button,
+  Text,
+  Box,
+  PseudoBox
+} from '@chakra-ui/core'
 
 interface Props {
   title: string
@@ -17,12 +25,16 @@ const PostItem: React.FC<Props> = ({
   img_url
 }) => {
   return (
-    <Flex
+    <PseudoBox
+      display="flex"
       flexDir="column"
       justifyContent="space-between"
       maxW="1170px"
       mx="auto"
-      mb="20"
+      mt="20"
+      _first={{
+        mt: '0'
+      }}
     >
       <Image src={img_url} />
       <Flex
@@ -65,7 +77,7 @@ const PostItem: React.FC<Props> = ({
           Discover
         </Button>
       </Flex>
-    </Flex>
+    </PseudoBox>
   )
 }
 

@@ -29,7 +29,6 @@ const Blog: React.FC = () => {
       <Flex
         flexDir="column"
         px={['8', '8', '32', '48', '48']}
-        pb="40"
         mt={['32', '32', '32', '8', '32']}
       >
         <PostItem

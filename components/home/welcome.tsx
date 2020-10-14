@@ -15,7 +15,7 @@ const Welcome: React.FC = () => {
       mx="auto"
     >
       <Image
-        src="/about-bg.png"
+        src="/about/about-bg.png"
         display={['none', 'none', 'none', 'block', 'block']}
         pr="6"
       />

@@ -20,7 +20,7 @@ const AboutCoinbase: React.FC = () => {
         px={['8', '8', '8', '64', '64']}
       >
         <Image
-          src="/about-2.png"
+          src="/about/about-2.png"
           pt="4"
           display={['none', 'none', 'none', 'block', 'block']}
         />

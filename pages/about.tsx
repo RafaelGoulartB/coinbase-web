@@ -8,6 +8,7 @@ import Quote from '../components/about/quote'
 import AboutCoinbase from '../components/about/about-coinbase'
 import Newsletter from '../components/newsletter'
 import YourTeam from '../components/about/your-team'
+import OurHistory from '../components/about/our-history'
 
 const About: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const About: React.FC = () => {
         </HeroTexts>
 
         <Image
-          src="/about-bg.png"
+          src="about/about-bg.png"
           display={['none', 'none', 'none', 'block', 'block']}
           pb={['0', '0', '0', '40', '20']}
           mr="8"
@@ -33,6 +34,7 @@ const About: React.FC = () => {
 
       <Quote />
       <AboutCoinbase />
+      <OurHistory />
       <YourTeam />
       <Newsletter />
     </>

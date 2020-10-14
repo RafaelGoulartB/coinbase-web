@@ -39,8 +39,9 @@
 
 <br />
 <div align="center">
-  <img src=".github/assets/screenshot-1.png" width="480">
-  <img src=".github/assets/screenshot-2.png" width="480">
+  <img src=".github/assets/video-1.gif" width="680">
+  <img src=".github/assets/screenshot-1.png" width="400">
+  <img src=".github/assets/screenshot-2.png" width="400">
 </div>
 
 ---

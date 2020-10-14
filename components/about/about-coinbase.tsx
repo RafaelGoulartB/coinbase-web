@@ -25,13 +25,13 @@ const AboutCoinbase: React.FC = () => {
           display={['none', 'none', 'none', 'block', 'block']}
         />
 
-        <Heading color="pink.500" mt="6">
+        <Heading color="pink.500" mt="6" textAlign="center">
           About CoinBase
         </Heading>
 
         <Divider />
 
-        <Text textAlign="center" lineHeight="2.2em">
+        <Text textAlign="center" lineHeight="2.2em" color="black">
           CoinBase is an online site and a p2admin platform that allows users to
           buy, sell and/ or exchange digital and fiat assets safely. Owned and
           managed by CoinBase Business Services established and Incoperated in

@@ -4,6 +4,7 @@ import HeroContainer from '../components/hero/hero-container'
 import HeroTexts from '../components/hero/hero-texts'
 import HeroTitle from '../components/hero/hero-title'
 import Welcome from '../components/home/welcome'
+import Newsletter from '../components/newsletter'
 
 const Home: React.FC = () => {
   return (
@@ -41,6 +42,8 @@ const Home: React.FC = () => {
       </HeroContainer>
 
       <Welcome />
+
+      <Newsletter />
     </>
   )
 }

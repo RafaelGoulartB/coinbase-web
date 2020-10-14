@@ -6,6 +6,7 @@ import HeroTexts from '../components/hero/hero-texts'
 import HeroTitle from '../components/hero/hero-title'
 import Quote from '../components/about/quote'
 import AboutCoinbase from '../components/about/about-coinbase'
+import Newsletter from '../components/newsletter'
 
 const About: React.FC = () => {
   return (
@@ -32,6 +33,8 @@ const About: React.FC = () => {
       <Quote />
 
       <AboutCoinbase />
+
+      <Newsletter />
     </>
   )
 }

@@ -4,6 +4,7 @@ import HeroContainer from '../components/hero/hero-container'
 import HeroBreadcrumb from '../components/hero/hero-breadcrumb'
 import HeroTexts from '../components/hero/hero-texts'
 import HeroTitle from '../components/hero/hero-title'
+import Quote from '../components/about/quote'
 
 const About: React.FC = () => {
   return (
@@ -26,6 +27,8 @@ const About: React.FC = () => {
           pt="10"
         />
       </HeroContainer>
+
+      <Quote />
     </>
   )
 }

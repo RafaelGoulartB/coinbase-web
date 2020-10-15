@@ -70,7 +70,6 @@
 </p>
 
 # :eyes: Demo Website
-The demo website can be missing some features, clone and run the project to a full experience. <br>
 👉  demo: https://coinbase-web.vercel.app/
 
 # :computer: Technologies

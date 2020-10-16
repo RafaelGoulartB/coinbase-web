@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Text, Image, Heading, Button } from '@chakra-ui/core'
-import Divider from '../divider'
+import { Flex, Text, Image, Button } from '@chakra-ui/core'
 import Tittle from '../title'
 
 const GreatExperience: React.FC = () => {
@@ -9,7 +8,7 @@ const GreatExperience: React.FC = () => {
       flexDir="row"
       justifyContent="space-between"
       alignItems="flex-start"
-      maxW="1360px"
+      maxW="1280px"
       w="100%"
       pt={['32', '32', '32', '8', '32']}
       px={['8', '8', '32', '16', '0']}

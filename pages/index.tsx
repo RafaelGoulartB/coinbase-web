@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Text, Image, Box } from '@chakra-ui/core'
+import { Button, Text, Image } from '@chakra-ui/core'
 import HeroContainer from '../components/hero/hero-container'
 import HeroTexts from '../components/hero/hero-texts'
 import HeroTitle from '../components/hero/hero-title'

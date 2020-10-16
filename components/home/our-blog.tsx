@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Heading, Text } from '@chakra-ui/core'
-import Divider from '../divider'
+import { Flex, Text } from '@chakra-ui/core'
 import Tittle from '../title'
 
 const OurBlog: React.FC = () => {
@@ -10,7 +9,7 @@ const OurBlog: React.FC = () => {
       alignItems="center"
       mt="12"
       textAlign="center"
-      maxW="1360px"
+      maxW="1280px"
       w="100%"
       px={['8', '8', '32', '16', '0']}
       mx="auto"

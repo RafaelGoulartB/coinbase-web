@@ -10,7 +10,7 @@ const YourTeam: React.FC = () => {
       maxW="510px"
       mx="auto"
       px={['8', '8', '0', '0', '0']}
-      mt="20"
+      mt="40"
       textAlign="center"
     >
       <Heading color="pink.500">Meet the Team</Heading>

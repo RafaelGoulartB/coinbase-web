@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Text, Heading, Stack, Avatar } from '@chakra-ui/core'
-import Divider from '../divider'
+import { Flex, Text, Stack, Avatar } from '@chakra-ui/core'
 import Tittle from '../title'
 
 const YourTeam: React.FC = () => {

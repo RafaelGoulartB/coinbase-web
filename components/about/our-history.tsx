@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Grid, Text, Heading, Image } from '@chakra-ui/core'
-import Divider from '../divider'
+import { Flex, Grid, Text, Image } from '@chakra-ui/core'
 import Tittle from '../title'
 
 const OurHistory: React.FC = () => {

@@ -1,9 +1,8 @@
 import React from 'react'
-import { Flex, Heading, Image, Text, Box } from '@chakra-ui/core'
+import { Flex, Image, Text, Box } from '@chakra-ui/core'
 import { FaMedal, FaStar } from 'react-icons/fa'
 import { IoIosPeople } from 'react-icons/io'
 import { BiSupport } from 'react-icons/bi'
-import Divider from '../divider'
 import Tittle from '../title'
 
 const AboutCoinbase: React.FC = () => {

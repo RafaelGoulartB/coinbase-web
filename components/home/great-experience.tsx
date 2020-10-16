@@ -38,7 +38,7 @@ const GreatExperience: React.FC = () => {
       </Flex>
 
       <Image
-        src="/great-exp-bg.png"
+        src="/home/great-exp.png"
         display={['none', 'none', 'none', 'block', 'block']}
         pr="6"
       />

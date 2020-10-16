@@ -39,7 +39,7 @@ const Home: React.FC = () => {
         </HeroTexts>
 
         <Image
-          src="/home-bg.png"
+          src="/home/home-bg.png"
           display={['none', 'none', 'none', 'block', 'block']}
           pb={['0', '0', '0', '40', '20']}
         />

@@ -26,7 +26,7 @@ const ContactUs: React.FC = () => {
         </HeroTexts>
 
         <Image
-          src="/contact-bg.png"
+          src="/contact/contact-bg.png"
           display={['none', 'none', 'none', 'block', 'block']}
           pb={['0', '0', '0', '40', '20']}
           mr="8"

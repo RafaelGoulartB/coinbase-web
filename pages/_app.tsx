@@ -4,10 +4,11 @@ import Head from 'next/head'
 import ThemeContainer from '../context/theme/ThemeContainer'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import { PseudoBox } from '@chakra-ui/core'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <>
+    <PseudoBox as="main" overflowX="hidden">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
@@ -21,7 +22,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <Component {...pageProps} />
         <Footer />
       </ThemeContainer>
-    </>
+    </PseudoBox>
   )
 }
 

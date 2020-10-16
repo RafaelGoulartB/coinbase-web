@@ -5,7 +5,7 @@ import Divider from './divider'
 const Tittle: React.FC = ({ children }) => {
   return (
     <>
-      <Heading color="pink.500" mt="6">
+      <Heading color="purple.500" mt="6">
         {children}
       </Heading>
 

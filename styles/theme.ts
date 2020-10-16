@@ -42,6 +42,10 @@ const customTheme: DefaultTheme = {
     blue: {
       ...theme.colors.blue,
       500: "#281AC8"
+    },
+    purple: {
+      ...theme.colors.purple,
+      500: '#9a4ab0'
     }
   },
   breakpoints

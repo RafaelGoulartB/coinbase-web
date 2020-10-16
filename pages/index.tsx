@@ -8,6 +8,7 @@ import Newsletter from '../components/newsletter'
 import GreatExperience from '../components/home/great-experience'
 import OurBlog from '../components/home/our-blog'
 import TradeAnywhere from '../components/home/trade-anywhere'
+import AppDownload from '../components/home/app-download'
 
 const Home: React.FC = () => {
   return (
@@ -48,6 +49,7 @@ const Home: React.FC = () => {
       <GreatExperience />
       <TradeAnywhere />
       <OurBlog />
+      <AppDownload />
       <Newsletter />
     </>
   )

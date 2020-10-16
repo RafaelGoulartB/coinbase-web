@@ -36,8 +36,14 @@ const MenuItems: React.FC<MenuItem> = ({ children, link, onClick }) => {
         color="black"
         onClick={onClick || undefined}
         transition="border .2s"
+        borderBottomWidth={[
+          '0',
+          '0',
+          router.pathname === link ? '4px' : 'none',
+          router.pathname === link ? '4px' : 'none',
+          router.pathname === link ? '4px' : 'none'
+        ]}
         borderBottomColor={router.pathname === link ? 'pink.500' : 'none'}
-        borderBottomWidth={router.pathname === link ? '4px' : 'none'}
         borderBottomLeftRadius={router.pathname === link ? '2px' : 'none'}
         borderBottomRightRadius={router.pathname === link ? '2px' : 'none'}
         _hover={{

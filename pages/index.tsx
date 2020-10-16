@@ -6,6 +6,7 @@ import HeroTitle from '../components/hero/hero-title'
 import Welcome from '../components/home/welcome'
 import Newsletter from '../components/newsletter'
 import GreatExperience from '../components/home/great-experience'
+import OurBlog from '../components/home/our-blog'
 
 const Home: React.FC = () => {
   return (
@@ -44,6 +45,7 @@ const Home: React.FC = () => {
 
       <Welcome />
       <GreatExperience />
+      <OurBlog />
       <Newsletter />
     </>
   )

@@ -4,6 +4,7 @@ import { FaMedal, FaStar } from 'react-icons/fa'
 import { IoIosPeople } from 'react-icons/io'
 import { BiSupport } from 'react-icons/bi'
 import Divider from '../divider'
+import Tittle from '../title'
 
 const AboutCoinbase: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const AboutCoinbase: React.FC = () => {
         mx="auto"
         py="12"
         px={['8', '8', '8', '64', '64']}
+        textAlign="center"
       >
         <Image
           src="/about/about-2.png"
@@ -25,11 +27,7 @@ const AboutCoinbase: React.FC = () => {
           display={['none', 'none', 'none', 'block', 'block']}
         />
 
-        <Heading color="pink.500" mt="6" textAlign="center">
-          About CoinBase
-        </Heading>
-
-        <Divider />
+        <Tittle>About Coinbase</Tittle>
 
         <Text textAlign="center" lineHeight="2.2em" color="black">
           CoinBase is an online site and a p2admin platform that allows users to

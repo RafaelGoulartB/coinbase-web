@@ -8,6 +8,7 @@ import {
   Text
 } from '@chakra-ui/core'
 import Divider from './divider'
+import Tittle from './title'
 
 const Newsletter: React.FC = () => {
   return (
@@ -20,8 +21,8 @@ const Newsletter: React.FC = () => {
       mt="20"
       textAlign="center"
     >
-      <Heading color="pink.500">Subscribe our newsletter</Heading>
-      <Divider />
+      <Tittle>Subscribe our newsletter</Tittle>
+
       <Text lineHeight="2.2em" color="black">
         Subscribe to our newsletter for daily/weekly update of our products and
         services.

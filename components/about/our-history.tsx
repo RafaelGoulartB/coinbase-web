@@ -1,21 +1,21 @@
 import React from 'react'
 import { Flex, Grid, Text, Heading, Image } from '@chakra-ui/core'
 import Divider from '../divider'
+import Tittle from '../title'
 
 const OurHistory: React.FC = () => {
   return (
     <Flex
       flexDir="column"
       alignItems="center"
-      mt="20"
+      mt="16"
       textAlign="center"
       maxW="1360px"
       w="100%"
       px={['8', '8', '32', '16', '0']}
       mx="auto"
     >
-      <Heading color="pink.500">Our history</Heading>
-      <Divider />
+      <Tittle>Our history</Tittle>
 
       <Grid
         mt="16"

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Text, Image, Heading, Button } from '@chakra-ui/core'
 import Divider from '../divider'
+import Tittle from '../title'
 
 const Welcome: React.FC = () => {
   return (
@@ -21,8 +22,8 @@ const Welcome: React.FC = () => {
       />
 
       <Flex flexDir="column">
-        <Heading color="pink.500">Welcome to CoinBase</Heading>
-        <Divider />
+        <Tittle>Welcome to Coinbase</Tittle>
+
         <Text pb="6" maxW="550px" lineHeight="2em">
           We have the best rates . Simply start your exchange right now. Sign up
           for our Affiliate program and earn commission from each exchange. The

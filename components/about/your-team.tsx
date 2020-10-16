@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Text, Heading, Stack, Avatar } from '@chakra-ui/core'
 import Divider from '../divider'
+import Tittle from '../title'
 
 const YourTeam: React.FC = () => {
   return (
@@ -10,11 +11,11 @@ const YourTeam: React.FC = () => {
       maxW="510px"
       mx="auto"
       px={['8', '8', '0', '0', '0']}
-      mt="40"
+      mt="32"
       textAlign="center"
     >
-      <Heading color="pink.500">Meet the Team</Heading>
-      <Divider />
+      <Tittle>Meet the Team</Tittle>
+
       <Text lineHeight="2.2em" color="black">
         Meet the team that makes the process of this system fast and painless as
         possible to provide you with good result

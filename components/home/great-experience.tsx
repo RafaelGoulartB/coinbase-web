@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Text, Image, Heading, Button } from '@chakra-ui/core'
 import Divider from '../divider'
+import Tittle from '../title'
 
 const GreatExperience: React.FC = () => {
   return (
@@ -16,8 +17,8 @@ const GreatExperience: React.FC = () => {
       mt="40"
     >
       <Flex flexDir="column">
-        <Heading color="pink.500">Great experience with CoinBase</Heading>
-        <Divider />
+        <Tittle> Great experience with CoinBase</Tittle>
+
         <Text pb="6" maxW="550px" lineHeight="2em">
           CoinBase is an online site and a p2admin platform that allows users to
           buy, sell and/ or exchange digital and fiat assets safely. Owned and

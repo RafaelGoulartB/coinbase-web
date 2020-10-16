@@ -10,7 +10,7 @@ const GreatExperience: React.FC = () => {
       alignItems="flex-start"
       maxW="1280px"
       w="100%"
-      pt={['32', '32', '32', '8', '32']}
+      pt={['0', '0', '0', '8', '32']}
       px={['8', '8', '32', '16', '0']}
       mx="auto"
       mt="40"

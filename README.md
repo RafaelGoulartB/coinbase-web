@@ -22,12 +22,6 @@
 
 > 🤑 Cryptocurrency &amp; Giftcard Exchange Website - Landing Page. Made with Next.js | Chakra UI
 
-<p align="center">
-    <a href="README.md">English</a>
-    ·
-    <a href="README-pt.md">Portuguese</a>
- </p>
-
 <div align="center">
   <sub>The coinbase project. Built with ❤︎ by
     <a href="https://github.com/RafaelGoulartB">Rafael Goulart</a> and
@@ -39,7 +33,7 @@
 
 <br />
 <div align="center">
-  <img src=".github/assets/video-1.gif" width="680">
+  <img src=".github/assets/video-1.gif" width="670">
 </div>
 
 <br />

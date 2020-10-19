@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   Button,
-  Link as ChakraLink,
   Divider,
   Flex,
   Image,
@@ -11,10 +10,12 @@ import {
   MenuList,
   MenuItem,
   PseudoBox,
-  Icon
+  Icon,
+  useDisclosure
 } from '@chakra-ui/core'
 import Link from 'next/link'
 import { useRouter } from 'next/dist/client/router'
+import LoginModal from './login-modal'
 
 interface MenuItem {
   link?: string
@@ -58,6 +59,8 @@ const MenuItems: React.FC<MenuItem> = ({ children, link, onClick }) => {
 }
 
 const Nav: React.FC = props => {
+  const loginDisclosure = useDisclosure()
+
   const [show, setShow] = React.useState(false)
   const handleToggle = () => setShow(!show)
 
@@ -133,17 +136,26 @@ const Nav: React.FC = props => {
             <MenuItem>Sell Giftcard</MenuItem>
           </MenuList>
         </Menu>
-        <Button
-          variantColor="pink"
-          background="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);"
-          color="white"
-          rounded="100px"
-          width="158px"
-          py="6"
-          textTransform="uppercase"
-        >
-          Login
-        </Button>
+
+        <>
+          <Button
+            variantColor="pink"
+            background="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);"
+            color="white"
+            rounded="100px"
+            width="158px"
+            py="6"
+            textTransform="uppercase"
+            onClick={loginDisclosure.onOpen}
+          >
+            Login
+          </Button>
+
+          <LoginModal
+            isOpen={loginDisclosure.isOpen}
+            onClose={loginDisclosure.onClose}
+          />
+        </>
       </Box>
     </Flex>
   )

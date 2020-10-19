@@ -1,8 +1,11 @@
 import React from 'react'
-import { Flex, Text, Image, Button } from '@chakra-ui/core'
+import { Flex, Text, Image, Button, useDisclosure } from '@chakra-ui/core'
 import Tittle from '../title'
+import BitcoinModal from '../bitcoin-modal'
 
 const GreatExperience: React.FC = () => {
+  const bitcoinDisclosure = useDisclosure()
+
   return (
     <Flex
       flexDir="row"
@@ -24,17 +27,24 @@ const GreatExperience: React.FC = () => {
           managed by CoinBase Business Services established and Incoperated in
           Nigeria.
         </Text>
-        <Button
-          background="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);"
-          textTransform="uppercase"
-          color="white"
-          rounded="100px"
-          width="158px"
-          py="6"
-          mb={['8', '8', '8', '0', '0']}
-        >
-          Discover
-        </Button>
+        <>
+          <Button
+            background="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);"
+            textTransform="uppercase"
+            color="white"
+            rounded="100px"
+            width="158px"
+            py="6"
+            mb={['8', '8', '8', '0', '0']}
+            onClick={bitcoinDisclosure.onOpen}
+          >
+            Discover
+          </Button>
+          <BitcoinModal
+            isOpen={bitcoinDisclosure.isOpen}
+            onClose={bitcoinDisclosure.onClose}
+          />
+        </>
       </Flex>
 
       <Image

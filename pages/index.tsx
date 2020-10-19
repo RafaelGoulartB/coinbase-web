@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Text, Image } from '@chakra-ui/core'
+import { Button, Text, Image, useDisclosure } from '@chakra-ui/core'
 import HeroContainer from '../components/hero/hero-container'
 import HeroTexts from '../components/hero/hero-texts'
 import HeroTitle from '../components/hero/hero-title'
@@ -9,8 +9,11 @@ import GreatExperience from '../components/home/great-experience'
 import OurBlog from '../components/home/our-blog'
 import TradeAnywhere from '../components/home/trade-anywhere'
 import AppDownload from '../components/home/app-download'
+import BitcoinModal from '../components/bitcoin-modal'
 
 const Home: React.FC = () => {
+  const bitcoinDisclosure = useDisclosure()
+
   return (
     <>
       <HeroContainer>
@@ -25,17 +28,25 @@ const Home: React.FC = () => {
             CoinBase is a platform for trading your bitcoin and giftcard at the
             best rate, why not give us a trial.
           </Text>
-          <Button
-            background="white"
-            textTransform="uppercase"
-            color="pink.500"
-            rounded="100px"
-            width="158px"
-            py="6"
-            mb={['8', '8', '8', '0', '0']}
-          >
-            Get Started
-          </Button>
+          <>
+            <Button
+              background="white"
+              textTransform="uppercase"
+              color="pink.500"
+              rounded="100px"
+              width="158px"
+              py="6"
+              mb={['8', '8', '8', '0', '0']}
+              onClick={bitcoinDisclosure.onOpen}
+            >
+              Get Started
+            </Button>
+
+            <BitcoinModal
+              isOpen={bitcoinDisclosure.isOpen}
+              onClose={bitcoinDisclosure.onClose}
+            />
+          </>
         </HeroTexts>
 
         <Image

@@ -80,6 +80,7 @@ This project was made using the follow technologies:
 - Exchange Bitcoin for Giftcard
   
 # :construction_worker: How to run
+**You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then:**
 ### Install Dependencies
 ```bash
 yarn install
